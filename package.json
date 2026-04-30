@@ -1,0 +1,16 @@
+{
+  "name": "public-cdn-worker",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "wrangler deploy --dry-run",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^4.80.0"
+  }
+}

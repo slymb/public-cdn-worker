@@ -1,0 +1,16 @@
+name = "public-cdn-worker"
+main = "worker.js"
+compatibility_date = "2026-04-01"
+workers_dev = false
+keep_vars = true
+
+[observability.logs]
+enabled = true
+invocation_logs = true
+
+# Secrets:
+# - B2_ENDPOINT
+# - SIGNING_SECRET, required only when REQUIRE_SIGNED_URLS = "true"
+#
+# Runtime variables are managed from Cloudflare Dashboard.
+# keep_vars prevents Wrangler deploys from overwriting Dashboard variables.

@@ -1,0 +1,40 @@
+# Internal
+.internal/
+.Interne/
+.claude/
+.codex/
+.agents/
+CLAUDE.md
+AGENTS.md
+GEMINI.md
+QWEN.md
+*.agents.md
+
+# Dependencies
+node_modules/
+
+# Build
+dist/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Logs
+*.log
+
+# Env
+.env
+.env.local
+.env.*
+*.env.example
+!.env.example
+.dev.vars
+.wrangler/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
