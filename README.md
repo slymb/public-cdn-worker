@@ -6,6 +6,7 @@
 [![Runtime Dependencies](https://img.shields.io/badge/Runtime%20dependencies-0-green)](https://github.com/slymb/public-cdn-worker)
 [![License: AGPL-3.0-or-later](https://img.shields.io/badge/License-AGPL--3.0--or--later-blue.svg)](./LICENSE)
 [![Maintained by Slym B.](https://img.shields.io/badge/Maintained%20by-Slym%20B.-111111)](https://github.com/slymb)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/slymb/public-cdn-worker)
 
 ---
 
