@@ -30,7 +30,10 @@ dist/
 *.env.example
 !.env.example
 .dev.vars
+.dev.vars.*
 .wrangler/
+wrangler-debug.log
+wrangler-*.log
 
 # IDE
 .vscode/

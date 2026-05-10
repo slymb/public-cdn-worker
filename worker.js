@@ -662,8 +662,9 @@ function applySecurityHeaders(response, env, isMedia) {
 // ===================================================
 
 function generateErrorResponse(env, request, errorType) {
+  const status = getErrorStatus(errorType);
+
   if (shouldReturnImageCompatibleError(request)) {
-    const status = errorType === 'notfound' ? 404 : 403;
     return generateImageCompatibleErrorResponse(status);
   }
 
@@ -756,7 +757,7 @@ function generateErrorResponse(env, request, errorType) {
 <body>
   <div class="container">
     <h1>${safeDisplayTitle}</h1>
-    <div class="code">403 FORBIDDEN</div>
+    <div class="code">${status} ${getErrorLabel(status)}</div>
     <p class="message">${safeDisplayMessage}</p>
     <div class="info">
       <div class="row"><div class="label">Country</div><div class="value">${safeCountryCode}</div></div>
@@ -768,7 +769,7 @@ function generateErrorResponse(env, request, errorType) {
   </div>
 </body>
 </html>`, {
-    status: 403,
+    status,
     headers: {
       'Content-Type': 'text/html; charset=utf-8',
       'Content-Security-Policy': `default-src 'none'; style-src 'nonce-${nonce}'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';`,
@@ -778,6 +779,18 @@ function generateErrorResponse(env, request, errorType) {
       'Cache-Control': 'no-store',
     }
   });
+}
+
+function getErrorStatus(errorType) {
+  if (errorType === 'notfound') return 404;
+  if (errorType === 'error') return 502;
+  return 403;
+}
+
+function getErrorLabel(status) {
+  if (status === 404) return 'NOT FOUND';
+  if (status === 502) return 'BAD GATEWAY';
+  return 'FORBIDDEN';
 }
 
 

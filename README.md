@@ -28,6 +28,7 @@ This repository is a Cloudflare Worker project designed for Wrangler and Cloudfl
 ```bash
 npm install
 npm run dev
+npm run check
 npm run deploy
 ```
 
@@ -45,6 +46,17 @@ npx wrangler secret put SIGNING_SECRET
 `SIGNING_SECRET` is required only when `REQUIRE_SIGNED_URLS = "true"`.
 
 Cloudflare can also deploy this repository from its Git integration.
+
+Local test commands:
+
+```bash
+npm run prod:offline
+npm run prod:local
+```
+
+- `prod:offline` runs the Worker locally with the local runtime. External bucket fetches leave from your machine.
+- `prod:local` runs with Cloudflare remote mode. External bucket fetches leave from Cloudflare and are closer to production behavior.
+- `npm run check` performs a Wrangler dry run without deploying.
 
 Recommended Workers Builds settings:
 
