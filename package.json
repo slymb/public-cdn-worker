@@ -1,6 +1,6 @@
 {
   "name": "public-cdn-worker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "private": true,
   "license": "AGPL-3.0-or-later",
@@ -13,6 +13,6 @@
     "tail": "wrangler tail --config wrangler.toml"
   },
   "devDependencies": {
-    "wrangler": "^4.80.0"
+    "wrangler": "^4.90.0"
   }
 }

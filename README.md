@@ -9,6 +9,10 @@
 
 ---
 
+<p align="center">
+  <img src="./slymb-public-cdn-worker.webp" alt="public-cdn-worker hotlink protection overview" width="100%">
+</p>
+
 ## Features
 
 - **Hotlink protection** : domain-based, subdomain wildcard auto

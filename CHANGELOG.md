@@ -4,6 +4,13 @@ All notable public changes to this project are documented in this file.
 
 This project follows semantic versioning.
 
+## [1.0.1] - 2026-05-10
+
+### Changed
+
+- Added README header artwork.
+- Updated Wrangler to `4.90.0` to support the current Worker compatibility date in local development.
+
 ## [1.0.0] - 2026-05-10
 
 ### Added
@@ -30,4 +37,3 @@ This project follows semantic versioning.
 
 - Runtime secrets and production values are not included in the repository.
 - Runtime configuration remains managed through Cloudflare Dashboard.
-
