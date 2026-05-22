@@ -4,6 +4,12 @@ All notable public changes to this project are documented in this file.
 
 This project follows semantic versioning.
 
+## [1.0.2] - 2026-05-23
+
+### Changed
+
+- Switched the public project license from AGPL-3.0-or-later to Apache-2.0.
+
 ## [1.0.1] - 2026-05-10
 
 ### Changed

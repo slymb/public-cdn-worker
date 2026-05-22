@@ -4,7 +4,7 @@
 
 [![Deploy to Cloudflare](https://img.shields.io/badge/Deploy-Cloudflare-orange?logo=cloudflare)](https://dash.cloudflare.com)
 [![Runtime Dependencies](https://img.shields.io/badge/Runtime%20dependencies-0-green)](https://github.com/slymb/public-cdn-worker)
-[![License: AGPL-3.0-or-later](https://img.shields.io/badge/License-AGPL--3.0--or--later-blue.svg)](./LICENSE)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](./LICENSE)
 [![Maintained by Slym B.](https://img.shields.io/badge/Maintained%20by-Slym%20B.-111111)](https://github.com/slymb)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/slymb/public-cdn-worker)
 
@@ -189,6 +189,4 @@ Request → UA Check → Hotlink Check → Cache Lookup → Bucket Fetch → Res
 
 ## License
 
-This project is licensed under [AGPL-3.0-or-later](./LICENSE).
-
-Commercial licensing is available for teams that need different terms, closed-source redistribution, or private integration without AGPL obligations.
+This project is licensed under the [Apache License 2.0](./LICENSE).

@@ -3,7 +3,7 @@
  * Protected media delivery for public buckets.
  * Author: Slym B.
  * Repository: https://github.com/slymb/public-cdn-worker
- * License: AGPL-3.0-or-later
+ * License: Apache-2.0
  *
  * ENV VARIABLES:
  * - ALLOWED_DOMAINS: allowed domains, comma-separated
